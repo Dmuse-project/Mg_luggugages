@@ -1,0 +1,29 @@
+.footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem 1rem;
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+
+  a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+
+    &:hover {
+      color: #facc15;
+    }
+  }
+}

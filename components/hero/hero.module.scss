@@ -1,0 +1,54 @@
+.hero {
+  background: url("/mg_image-3.jpg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  max-width: 600px;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(135deg, #facc15, #eab308);
+  color: #1a1a1a;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background: linear-gradient(135deg, #fde047, #facc15);
+  }
+}

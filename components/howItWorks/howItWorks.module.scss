@@ -1,0 +1,51 @@
+.how {
+//   background: #f9fafb;
+  background: #f9fafb;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #111827;
+}
+
+.steps {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+
+  p {
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+  }
+}
+
+.number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #1e40af;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  line-height: 40px;
+  font-size: 1rem;
+}

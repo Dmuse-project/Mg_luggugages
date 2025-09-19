@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./products.module.scss";
 
 const boxes = [
@@ -28,12 +29,12 @@ export default function Products() {
             <h3>{box.name}</h3>
             <p>{box.desc}</p>
             <span className={styles.price}>{box.price}</span>
-            <a
+            <Link
               href="https://wa.me/234XXXXXXXXXX"
               className={styles.buyBtn}
             >
               Buy Now
-            </a>
+            </Link>
           </div>
         ))}
       </div>

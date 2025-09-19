@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./nav.module.scss";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       {/* Logo */}
       <div className={styles.logo}>
-        <a href="/">MG Luggages</a>
+        <Link href="/">MG Luggages</Link>
       </div>
 
       {/* Hamburger Menu */}
@@ -25,14 +26,14 @@ export default function Navbar() {
 
       {/* Links */}
       <ul className={`${styles.links} ${open ? styles.show : ""}`}>
-        <li><a href="/#shop">Shop</a></li>
-        <li><a href="/#features">Features</a></li>
-        <li><a href="/#how">How It Works</a></li>
-        <li><a href="/#contact">Contact</a></li>
+        <li><Link href="/#shop">Shop</Link></li>
+        <li><Link href="/#features">Features</Link></li>
+        <li><Link href="/#how">How It Works</Link></li>
+        <li><Link href="/#contact">Contact</Link></li>
         <li>
-          <a href="/#shop" className={styles.ctaBtn}>
+          <Link href="/#shop" className={styles.ctaBtn}>
             Order Now
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

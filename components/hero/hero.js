@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./hero.module.scss";
 
 export default function Hero() {
@@ -8,9 +9,9 @@ export default function Hero() {
         <p className={styles.subtitle}>
           Curated travel boxes with everything you need for your next trip.
         </p>
-        <a href="/#shop" className={styles.cta}>
+        <Link href="/#shop" className={styles.cta}>
           Shop Now
-        </a>
+        </Link>
       </div>
     </section>
   );
